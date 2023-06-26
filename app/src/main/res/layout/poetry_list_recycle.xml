@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/lihtgray"
+    android:layout_margin="5dp"
+    >
+
+
+    <TextView
+        android:id="@+id/poet_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ashok Thombre"
+        android:minHeight="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/poetry_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Friendship ... is born at the moment when one man says to another What! You too? I thought that no one but myself . . ."
+        android:minHeight="60dp"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10-apr-2021"
+        android:gravity="center_vertical|right"
+        android:minHeight="30dp"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+
+            android:text="Update" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:text="Delete" />
+    </LinearLayout>
+</LinearLayout>

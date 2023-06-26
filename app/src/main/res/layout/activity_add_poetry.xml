@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lihtgray"
+    tools:context=".AddPoetryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:title="Add Poetry"
+
+        app:titleTextColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:id="@+id/poetry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:ems="10"
+            android:inputType="text"
+           android:hint="Add Poetry Data" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:id="@+id/poet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Poet Name" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_poem"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_bg"
+            android:text="Add Poem"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</LinearLayout>
